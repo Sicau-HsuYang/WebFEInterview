@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function func() {
+      alert(1);
+    }
+
+    // (document.body || document.documentElement).onload = function () {
+    //   alert(3);
+    // }
+    document.body.onload = func
+
+    window.onload = function () {
+      alert(2);
+    }
+  </script>
+</body>
+
+</html>
